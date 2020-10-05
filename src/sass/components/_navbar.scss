@@ -1,0 +1,52 @@
+.navbar {
+    height: 2.5rem;
+    font-size: 1.8rem;
+    font-family: Lato, sans-serif;
+    transform: translateY(-.5rem);
+    
+   
+    &__items {
+        display: grid;
+        grid-template-columns: 5rem auto 8.5rem 6.8rem 7rem;
+        list-style: none;
+
+        & li > * {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        &--1 {
+            grid-column: 1;
+        }
+
+        &--2 {
+            grid-column: 3;
+        }
+
+        &--3 {
+            grid-column: 4;
+        }
+
+        &--4 {
+            grid-column: 5;
+        }
+    }
+
+    &__item {
+        align-self: right;
+        transition: all 1s;
+        align-self: center;
+        border-radius: .3rem;
+        transition: all .7s;
+        margin-right: .5rem;
+        
+        &:hover {
+            cursor: pointer;
+            transform:scale(1.1);
+        }
+
+        &:active {
+            color: #ff8c00;
+        }
+    }
+}
