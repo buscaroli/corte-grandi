@@ -12,8 +12,8 @@ function Navbar() {
                 <li className='navbar__item navbar__items--3'><Link to='/pets'>Cuccioli</Link></li>
                 <li className='navbar__item navbar__items--4'><Link to='/contacts'>Contatti</Link></li>
                 <li className='navbar__item navbar__items--5'>
-                    <a href='https://www.facebook.com/lacortedeigrandi/' target='_blank'>
-                        <IconContext.Provider value={{style: {color: 'dodgerblue', fontSize: '4rem'}}}>
+                    <a href='https://www.facebook.com/lacortedeigrandi/' target='_blank' rel="noopener noreferrer">
+                        <IconContext.Provider value={{style: {color: '#ff8c00', fontSize: '4rem'}}}>
                             <div>
                                 <FaFacebook />
                             </div> 

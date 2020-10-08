@@ -7,7 +7,7 @@ import fci from '../assets/images/logo-fci-orange.png'
 const Header = () => {
     return (
         <div className='header'>
-            <Navbar />
+            
                 <div className='header__logo'>
                     <img src={logo} alt='logo diamante'/>
                 </div>

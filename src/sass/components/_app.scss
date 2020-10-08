@@ -4,7 +4,7 @@
     background-color: #222;
     color: #eee;
     justify-content: center;
-    grid-template-rows: 33rem auto 5rem;
+    grid-template-rows: 3rem minmax(60rem, auto) 5rem;
     height: 100vh;
 }
 
