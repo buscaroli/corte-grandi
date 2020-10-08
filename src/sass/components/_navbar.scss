@@ -13,14 +13,13 @@
 
         & li > * {
             text-decoration: none;
+            letter-spacing: .2rem;
             color: #ccc;
         }
 
         &--1 {
-            font-family: 'Great Vibes', cursive;
+            font-family: Lato, sans;
             grid-column: 1;
-            font-size: 3rem;
-            text-shadow: .2rem .2rem .4rem  #ff8c00;
             margin-left: 1rem;
         }
 
@@ -53,7 +52,7 @@
         &:hover {
             cursor: pointer;
             text-shadow:  .2rem .2rem .4rem  #ff8c00;
-            transform:scale(1.1);
+            transform:scale(1.2);
         }
 
     }

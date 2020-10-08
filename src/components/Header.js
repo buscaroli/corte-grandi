@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import logo from '../assets/images/diamond.png'
 import enci from '../assets/images/logo-enci-orange.png'
 import fci from '../assets/images/logo-fci-orange.png'

@@ -1,8 +1,75 @@
-.homepage {
-    font-size: 1.8rem;
-    font-family: Lato, sans-serif;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    margin: 0 auto;
+.home {
     background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    
+    // grid-template: 
+    //     'pic1 pic1 txt1 txt1'
+    //     'pic1 pic1 txt1 txt1'
+    //     'pic1 pic1 txt1 txt1'
+    //     'pic1 pic1 txt1 txt1'
+    //     'txt2 txt2 pic2 pic2'
+    //     'txt2 txt2 pic2 pic2'
+    //     'txt2 txt2 pic2 pic2'
+    //     'pic3 pic3 txt3 txt3'
+    //     'pic3 pic3 txt3 txt3'
+    //     'pic3 pic3 txt3 txt3'
+    // ;
+
+    &__pic {
+        justify-self: center;
+        align-self: center;
+        
+        &--1,
+        &--2,
+        &--3 {
+            width: 30vw;
+            border-radius: .5rem;
+        }
+
+        &--1 {
+            //grid-area: pic1;
+        }
+
+        &--2 {
+            //grid-area: pic2;
+        }
+
+        &--3 {
+            //grid-area: pic3;
+        }
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+
+        & span {
+            color: #ffaf4d;
+        }
+
+        &--1,
+        &--2,
+        &--3 {
+            //background-color: darkseagreen;
+        }
+
+        &--1 {
+            //grid-area: txt1;
+        }
+
+        &--2 {
+            //grid-area: txt2;
+        }
+
+        &--3 {
+            //grid-area: txt3;
+        }
+    }
 }
