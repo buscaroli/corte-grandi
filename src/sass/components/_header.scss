@@ -2,7 +2,11 @@
     position: relative;
     display: grid;
     padding-top: 2rem;
-    grid-template-rows: 2rem auto;
+    grid-template: 
+        'head head head head head head head head head head head head'
+        '.    .    .    logo text text text text text text .    .   '
+        '.    .    .    logo text text text text text text .    .   '
+        '.    .    .    .    subt subt subt subt subt subt .    .   ';
     //background-color: darkslateblue;
     
     // background-image: linear-gradient(
@@ -22,22 +26,42 @@
         background-image: url(./assets/images/foto-header.jpg);
         background-size: cover;
         filter: grayscale(100%) brightness(.4);
+
+        // clip-path: polygon(0 35%, 12% 0,100% 0, 100% 100%, 0 100%);
         
 
     }
 
+    &__logo {
+        grid-area: logo;
+        margin-top: 1rem;
+        //background-image: url(./assets/images/diamond.png);
+        z-index: 10; 
+        //background-size: cover;
+        //filter: grayscale(100%) contrast(100%) brightness(1.2);
+        align-self: right;
+
+        & img {
+            width: 15rem;
+        
+        }
+    }
+
+
     &__title {
+        grid-area: text;
         position: relative;
         font-family: 'Great Vibes', cursive;
-        font-size: 10rem;
+        font-size: 8rem;
         justify-self: center;
+        text-shadow: .1rem .1rem #e96710;
+        margin-top: 20px;
     }
 
     &__subtitle {
+        grid-area: subt;
         position: relative;
-        padding-top: 1.5rem;
-        float: auto;
-        width: 80%;
+        //padding-top: 1.5rem;
         text-align: center;
         font-family: Lato, sans-serif;
         font-size: 2.8rem;

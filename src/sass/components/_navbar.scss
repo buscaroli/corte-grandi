@@ -1,13 +1,14 @@
 .navbar {
+    grid-area: head;
     height: 2.5rem;
     font-size: 1.8rem;
     font-family: Lato, sans-serif;
-    transform: translateY(-.5rem);
+    transform: translateY(-1rem);
     
    
     &__items {
         display: grid;
-        grid-template-columns: 5rem auto 8.5rem 6.8rem 7rem;
+        grid-template-columns: 5rem auto 11rem 11rem 11rem;
         list-style: none;
 
         & li > * {
@@ -16,7 +17,11 @@
         }
 
         &--1 {
+            font-family: 'Great Vibes', cursive;
             grid-column: 1;
+            font-size: 3rem;
+            text-shadow: .2rem .2rem .4rem  #ff8c00;
+            margin-left: 1rem;
         }
 
         &--2 {
@@ -29,24 +34,22 @@
 
         &--4 {
             grid-column: 5;
+            margin-right: 1rem;
         }
     }
 
     &__item {
         align-self: right;
-        transition: all 1s;
         align-self: center;
         border-radius: .3rem;
-        transition: all .7s;
+        transition: all .5s;
         margin-right: .5rem;
         
         &:hover {
             cursor: pointer;
+            text-shadow:  .2rem .2rem .4rem  #ff8c00;
             transform:scale(1.1);
         }
 
-        &:active {
-            color: #ff8c00;
-        }
     }
 }
