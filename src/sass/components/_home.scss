@@ -1,7 +1,16 @@
 .home {
     background-color: #222;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    @media (max-width: 900px) {
+        grid-gap: 0;
+       }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
     
     // grid-template: 
     //     'pic1 pic1 txt1 txt1'
@@ -19,12 +28,17 @@
     &__pic {
         justify-self: center;
         align-self: center;
+        max-width: 60rem;
         
         &--1,
         &--2,
         &--3 {
             width: 30vw;
             border-radius: .5rem;
+
+            @media (max-width: 600px) {
+                width: 90vw;
+            }
         }
 
         &--1 {
@@ -38,6 +52,14 @@
         &--3 {
             //grid-area: pic3;
         }
+
+        @media (max-width: 900px) {
+            max-width: 40rem;
+        }
+
+        @media (max-width: 600px) {
+            max-width: 100vw;
+        }
     }
 
     &__text {
@@ -48,7 +70,7 @@
         line-height: 1.5;
         justify-self: center;
         align-self: center;
-        width: 80%;
+        max-width: 80%;
 
         & span {
             color: #ffaf4d;
@@ -70,6 +92,15 @@
 
         &--3 {
             //grid-area: txt3;
+        }
+
+        @media (max-width: 900px) {
+           font-size: 1.8rem;
+           max-width: 100%;
+        }
+        
+        @media (max-width: 600px) {
+            
         }
     }
 }

@@ -6,6 +6,10 @@
     margin: 0 auto;
     // background-color: green;
 
+    @media (max-width: 900px) {
+        font-size: 1rem;
+    }
+
     & a {
         color: #ff8c00;
         text-decoration: none;

@@ -11,4 +11,8 @@ html {
     width: 80%;
     margin: 0 auto;
     background-color: #222;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }

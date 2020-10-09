@@ -7,6 +7,13 @@
         '.    .    logo .    text text text text text text .    .   '
         '.    club club club subt subt subt subt subt subt .    .   ';
     margin-bottom: 3rem;
+
+    @media (max-width: 900px) {
+        grid-template: 
+            '.   .    logo .    text text text text text text'
+            '.   .    logo .    text text text text text text'
+            '.   club club club subt subt subt subt subt subt';
+    }
     
     &::before {
         content: "";
@@ -32,7 +39,11 @@
         //filter: grayscale(100%) contrast(100%) brightness(1.2);
 
         & img {
-            width: 20rem;
+            width: 17rem;
+
+            @media (max-width: 900px) {
+                width: 12rem;
+            }
             
         }
     }
@@ -45,10 +56,18 @@
         
         &--fci {
             width: 12rem;
+
+            @media (max-width: 900px) {
+                width: 7rem;
+            }
         }
 
         &--enci {
-            width: 12rem;
+            width: 14rem;
+
+            @media (max-width: 900px) {
+                width: 9rem;
+            }
         }
 
     }
@@ -62,6 +81,14 @@
         justify-self: center;
         text-shadow: .1rem .1rem 1.5rem #e96710;
         margin-top: 20px;
+
+        @media (max-width: 900px) {
+            font-size: 4rem;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 5rem;
+        }
     }
 
     &__subtitle {
@@ -75,6 +102,10 @@
         justify-self: center;
         font-stretch: semi-expanded;
 
+        @media (max-width: 900px) {
+            font-size: 2rem;
+        }
+
         & span {
             display: table;
             margin: 0 auto;
@@ -83,6 +114,10 @@
             margin-top: .6rem;
             font-stretch: expanded;
             color: #ffaf4d;
+
+            @media (max-width: 900px) {
+                font-size: 2.8rem;
+            }
         }
     }
 }
