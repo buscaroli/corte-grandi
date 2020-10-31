@@ -10,6 +10,11 @@
         font-size: 1rem;
     }
 
+    @media (max-width: 600px) {
+        padding-top: .2rem;
+        font-size: 1.3rem;
+    }
+
     & a {
         color: #ff8c00;
         text-decoration: none;

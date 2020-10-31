@@ -13,6 +13,11 @@ html {
     background-color: #222;
 
     @media (max-width: 600px) {
-        width: 100%;
+        width: 60rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
