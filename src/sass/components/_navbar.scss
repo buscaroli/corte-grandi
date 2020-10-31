@@ -4,12 +4,20 @@
     font-size: 1.8rem;
     font-family: Lato, sans-serif;
     transform: translateY(-1rem);
+
+    @media(max-width: 600px) {
+        font-size: 1.2rem;
+    }
     
    
     &__items {
         display: grid;
         grid-template-columns: 5rem auto 11rem 11rem 11rem 5rem;
         list-style: none;
+
+        @media(max-width: 600px) {
+            grid-template-columns: 4rem auto 8rem 7rem 7rem 4rem;
+        }
 
         & li > * {
             text-decoration: none;

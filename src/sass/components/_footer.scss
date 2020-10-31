@@ -12,7 +12,9 @@
 
     @media (max-width: 600px) {
         padding-top: .2rem;
-        font-size: 1.3rem;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        border-top: solid .3rem  #ffaf4d;
     }
 
     & a {
