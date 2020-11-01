@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import { IconContext } from 'react-icons'
 import { FaFacebook } from 'react-icons/fa'
-
+import ReactMapGL from 'react-map-gl'
 
 const Contacts = () => {
+
+    const [viewport, setViewport] = useState({
+        latitude: 44.5127578,
+        longitude: 11.8291743,
+        zoom: 9,
+        minZoom: 5,
+        maxZoom: 11,
+        width: '100%',
+        height: '100%'        
+    })
+
     const icon_link = () => {
         return (
             <a href='https://www.facebook.com/lacortedeigrandi/' target='_blank' rel="noopener noreferrer">
-                <IconContext.Provider value={{style: {color: 'lightskyblue', fontSize: '3rem'}}}>
-                    <div>
+                <IconContext.Provider value={{style: {color: '#ffaf4d', fontSize: '3rem'}}}>
                         <FaFacebook />
-                    </div> 
                 </IconContext.Provider>
             </a>
         )
@@ -30,7 +39,14 @@ const Contacts = () => {
                     </p>
                 </div>
                 <div className='contacts__map'>
-                    <iframe className='contacts__map--iframe'></iframe>
+                    <ReactMapGL
+                        className='contacts__map--mapbox'
+                        {...viewport} 
+                        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_KEY}
+                        onViewportChange={viewport => {setViewport(viewport)}}
+                        mapStyle='mapbox://styles/mmontyy78/ckgzb00wy147019npvt3madnu'>
+
+                    </ReactMapGL>
                 </div>
             </div>
         </div>

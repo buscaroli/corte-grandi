@@ -13,4 +13,6 @@ app.get('/ping', function (req, res) {
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+require('dotenv').config();
+console.log(process.env);
 app.listen(port);
