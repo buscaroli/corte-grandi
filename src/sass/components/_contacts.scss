@@ -16,15 +16,14 @@
 
 
         @media (max-width: 900px) {
-           max-width: 100%;
+           width: 100%;
            grid-template-columns: 1fr;
            padding-right: 0;
         }
         
         @media (max-width: 600px) {
-            @media (max-width: 600px){
              padding: 1rem 0;
-            }
+            
         }
 
     &__text{
@@ -39,17 +38,28 @@
     }
 
     &__map{
-        // border: solid red 2px;
+        border: solid red 2px;
         height: 30rem;
         
-
-        &--mapbox{
-            border-radius: .5rem;
-        }
-
         @media(max-width: 600px){
             padding: 1rem 0;
         }
+
+        &--mapbox{
+            border-radius: .5rem;
+
+            @media(max-width: 900px){
+                padding: 1rem 0;
+                
+            }
+
+            @media(max-width: 600px){
+                padding: 1rem 0;
+                width: 100%;
+            }
+        }
+
+        
 
     }
 }

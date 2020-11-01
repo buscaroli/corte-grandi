@@ -72,13 +72,12 @@ html {
     color: #ffaf4d; }
   @media (max-width: 900px) {
     .contacts {
-      max-width: 100%;
+      width: 100%;
       grid-template-columns: 1fr;
       padding-right: 0; } }
-
-@media (max-width: 600px) and (max-width: 600px) {
-  .contacts {
-    padding: 1rem 0; } }
+  @media (max-width: 600px) {
+    .contacts {
+      padding: 1rem 0; } }
   .contacts__text {
     display: inline; }
     .contacts__text--intro a {
@@ -87,12 +86,20 @@ html {
       padding-left: .5rem;
       padding-right: 1rem; }
   .contacts__map {
+    border: solid red 2px;
     height: 30rem; }
-    .contacts__map--mapbox {
-      border-radius: .5rem; }
     @media (max-width: 600px) {
       .contacts__map {
         padding: 1rem 0; } }
+    .contacts__map--mapbox {
+      border-radius: .5rem; }
+      @media (max-width: 900px) {
+        .contacts__map--mapbox {
+          padding: 1rem 0; } }
+      @media (max-width: 600px) {
+        .contacts__map--mapbox {
+          padding: 1rem 0;
+          width: 100%; } }
 
 .footer {
   font-size: 1.4rem;
