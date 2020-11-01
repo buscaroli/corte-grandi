@@ -1,11 +1,29 @@
 import React from 'react'
+import Header from './Header'
+import pic1 from '../assets/images/about1.jpg'
+
 
 const About = () => {
     return (
         <div>
+            <Header />
             <div className='about'>
-                Vero sit gubergren ipsum tempor sit, diam clita ipsum et kasd amet, clita diam justo voluptua dolor. Duo diam sanctus justo ut dolor sed et ea, ipsum lorem ut voluptua dolores, dolor kasd aliquyam sit at aliquyam sit, erat justo lorem et rebum eos eos no sanctus eos, dolor takimata dolores et sit clita takimata lorem nonumy elitr. Diam voluptua eirmod et sanctus elitr at diam, sadipscing labore lorem diam takimata. Erat sed dolores et sadipscing rebum, amet consetetur erat sea at lorem dolor elitr invidunt. Ut est takimata sadipscing et, no ipsum et et amet nonumy. Dolor sed diam et et, lorem sed erat kasd accusam consetetur. Takimata stet sit labore sea et. Vero elitr sit sadipscing lorem rebum et no takimata est, justo stet sanctus et rebum kasd eirmod diam, eirmod sit eos diam invidunt lorem ipsum et. Sed rebum rebum consetetur amet. Consetetur lorem aliquyam dolores eirmod ipsum takimata ea, ut sit lorem lorem et ipsum eirmod, diam diam rebum stet erat dolor at ut diam eos, amet dolores diam ipsum stet magna ipsum dolor sea diam. Lorem vero sea sit accusam. Ea ut ea stet et, labore kasd amet et sadipscing amet amet rebum. Et justo.
+                <div className='about__pic'><img className='about__pic--1' src={pic1} alt='natura, fotografia'/></div>
+                <div className='about__text'>
+                    <p className='about__text--1'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quia studebat laudi et dignitati, multum in virtute processerat. 
+                        Si sapiens, ne tum quidem miser, <span>cum ab Oroete, praetore Darei</span>, in crucem actus est. Conferam tecum, quam cuique verso rem subicias.
+                        An est aliquid, <span>quod te sua sponte delectet?</span> Ita multo sanguine profuso in laetitia et in victoria est mortuus. 
+                    </p>
+                    <br />
+                    <p className='about__text--3'>
+                        Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span>. Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. 
+                        Verum esto: verbum ipsum voluptatis non habet dignitatem, nec nos fortasse intellegimus. Quamquam te quidem video minime esse deterritum. Nescio quo modo praetervolavit oratio. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum memoria. Duo Reges: constructio interrete. Uterque enim summo bono fruitur, id est voluptate. Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest. 
+                        Et ille ridens: Video, inquit, quid agas; Non enim, <span>si omnia non sequebatur</span>, idcirco non erat ortus illinc. Primum Theophrasti, Strato, physicum se voluit.
+                    </p>
+                </div>        
             </div>
+            
         </div>
         
     )

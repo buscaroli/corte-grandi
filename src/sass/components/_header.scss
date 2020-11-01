@@ -17,8 +17,8 @@
 
     @media (max-width: 600px) {
         grid-template: 
-            '.    logo text    text text text text text text'
-            '.    logo text    text text text text text text'
+            '.    logo text text text text text text text'
+            '.    logo text text text text text text text'
             'club club club subt subt subt subt subt subt';
     }
     
@@ -92,13 +92,13 @@
         grid-area: text;
         position: relative;
         font-family: 'Great Vibes', cursive;
-        font-size: 6.9rem;
+        font-size: 6.7rem;
         justify-self: center;
         text-shadow: .1rem .1rem 1.5rem #e96710;
         margin-top: 20px;
 
         @media (max-width: 900px) {
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
 
         @media (max-width: 600px) {
@@ -118,7 +118,7 @@
         font-stretch: semi-expanded;
 
         @media (max-width: 900px) {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
 
         @media (max-width: 600px){
@@ -135,11 +135,11 @@
             color: #ffaf4d;
 
             @media (max-width: 900px) {
-                font-size: 2.8rem;
+                font-size: 2.2rem;
             }
 
             @media (max-width: 600px){
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
     }
