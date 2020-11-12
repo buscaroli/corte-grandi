@@ -334,3 +334,15 @@ html {
       cursor: pointer;
       text-shadow: .2rem .2rem .4rem  #ff8c00;
       transform: scale(1.2); }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  position: relative; }
+  .gallery__frame--img {
+    width: 100%;
+    border-radius: .5rem;
+    transition: all .5s; }
+  .gallery__frame--img:hover {
+    transform: scale(1.1); }
