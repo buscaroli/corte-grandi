@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
 import pic1 from '../assets/images/about1.jpg'
 
 
